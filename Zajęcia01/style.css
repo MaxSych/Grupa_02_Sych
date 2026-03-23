@@ -1,0 +1,101 @@
+/* Общие стили для main */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Контейнер детализации эвристики */
+.heuristic-detail h1 {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+
+
+.description {
+    background-color: #f8f9fa;
+    border-left: 5px solid #0056b3;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.description p {
+    margin-bottom: 10px;
+}
+
+.description strong {
+    color: #0056b3;
+}
+
+/* Сетка для примеров */
+.examples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Карточка примера */
+.example-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.example-item:hover {
+    transform: translateY(-5px);
+}
+
+.example-item h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #222;
+}
+
+
+.example-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 15px 0;
+    border: 1px solid #eee;
+}
+
+.example-item p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.custom-link {
+    text-decoration: none; /* Убираем стандартное подчеркивание */
+    color: #0056b3;        /* Наш фирменный синий */
+    font-weight: 600;
+    border-bottom: 2px solid rgba(0, 86, 179, 0.2); /* Прозрачная линия */
+    transition: all 0.3s ease; /* Плавность анимации */
+    padding-bottom: 2px;
+}
+
+.custom-link:hover {
+    border-bottom-color: #0056b3; /* Линия становится ярче при наведении */
+    color: #004494;
+}
+
+/* Адаптивность для мобилок */
+@media (max-width: 600px) {
+    .heuristic-detail h1 {
+        font-size: 1.5rem;
+    }
+    
+    .examples {
+        grid-template-columns: 1fr;
+    }
+}

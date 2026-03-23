@@ -1,0 +1,100 @@
+/* Общие настройки (совпадают с основным стилем) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Стили заголовков */
+header {
+    background-color: #fff;
+    border-bottom: 3px solid #0056b3;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header h1 {
+    color: #0056b3;
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Секция Hero (Описание анализа) */
+.hero {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    border-left: 8px solid #0056b3;
+}
+
+.hero h2 {
+    color: #222;
+    margin-top: 0;
+}
+
+/* Навигация (Список эвристик) */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr; /* В одну колонку на мобилках */
+    gap: 15px;
+}
+
+@media (min-width: 600px) {
+    nav ul {
+        grid-template-columns: 1fr 1fr; /* В две колонки на десктопе */
+    }
+}
+
+nav li {
+    transition: transform 0.2s ease;
+}
+
+nav a {
+    display: block;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #0056b3;
+    transform: translateX(5px);
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    color: #777;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+    margin-top: 60px;
+}
+
+/* Улучшение для жирного текста */
+strong {
+    color: #0056b3;
+}
